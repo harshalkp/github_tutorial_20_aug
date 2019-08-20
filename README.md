@@ -1,2 +1,9 @@
 # github_tutorial_20_aug
- Tutorial at HH
+ 
+ This is a repository for the tutorial done at Haywards Heath
+
+ Functions Taught
+
+  Git Push
+  Git Commit
+  Git Push
