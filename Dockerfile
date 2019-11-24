@@ -1,13 +1,18 @@
 FROM ubuntu:16.04
 
-RUN RUN apt-get update -y && \
+RUN apt-get update -y && \
     apt-get install -y python-pip python-dev
 
-COPY ./requirements.txt /app/requirements.txt
+COPY ./requirements.txt /api/requirements.txt
+COPY ./api/api.py /api/api.py 
 
-WORKDIR /
+WORKDIR /api
 
 RUN pip install -r requirements.txt
+
+EXPOSE 5000
+
+RUN ls
 
 ENTRYPOINT [ "python" ]
 
